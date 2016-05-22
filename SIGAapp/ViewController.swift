@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var emailBox: UITextField!
+    
+    @IBAction func login(sender: AnyObject) {
+        
+        let usuario = Usuario()
+        
+        usuario.name = emailBox.text!
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
