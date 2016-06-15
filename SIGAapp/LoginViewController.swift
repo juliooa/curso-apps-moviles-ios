@@ -8,23 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    
-    @IBOutlet var emailBox: UITextField!
-    
-    @IBAction func login(sender: AnyObject) {
-        
-        let usuario = Usuario()
-        
-        usuario.name = emailBox.text!
-        
-    }
+class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
 }
 
